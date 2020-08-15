@@ -55,7 +55,7 @@ ws.Cells(2, 11).Value = ws.Cells(2, 3).Value
         'Check if we are still within the same ticker symbol, if it is not...
         If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
 
-            'Set the Stock ticker name
+    'Set the Stock ticker name, open and close prices
             Stock_ticker_Name = ws.Cells(i, 1).Value
             Stock_ticker_Open = ws.Cells(i + 1, 3).Value
             Stock_ticker_Close = ws.Cells(i, 6).Value
@@ -126,7 +126,7 @@ Dim Yearly_change_percent As Double
     Next i
     
 '---------------------------------------------------------
-' CHALLENGE - Find greatest increase, decrease and volume
+' CHALLENGE - FIND GREATEST INCREASE, DECREASE AND VOLUME
 '---------------------------------------------------------
 
 'Header Labels
